@@ -46,7 +46,7 @@ export const Banner = () => {
                 <Row className="aling-items-center">
                     <Col xs={12} ms={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio!</span>
-                        <h1>{"Hi, I'm Benjamin"}<span className="wrap">web developer</span></h1>
+                        <h1>{"Hi, I'm Benjamin "}<span className="wrap">web developer</span></h1>
                         <p>I'm not sure what goes here yet! </p>
                     </Col>
                     <Col xs={12} ms={6} xl={5}>
