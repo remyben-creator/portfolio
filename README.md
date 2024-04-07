@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+TO-DO
+personalize 
+make easy websites for all of my projects
+make he lets connect button do something
+
 ## Available Scripts
 
 In the project directory, you can run:
