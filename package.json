@@ -2,6 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "plugins": [
+    "@babel/plugin-proposal-private-property-in-object"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -18,7 +21,8 @@
     "react-multi-carousel": "^2.8.5",
     "react-on-screen": "^2.1.1",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+
   },
   "scripts": {
     "start": "react-scripts start",
