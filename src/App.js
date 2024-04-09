@@ -8,8 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Project1 } from './components/project1';
-
+import { Project1 } from './components/Project1';
 function App() {
   return (
     <Router>
@@ -22,6 +21,7 @@ function App() {
         <Footer />
 
         <Link to="/">Home</Link>
+        <Link to="/Project1">Project 1</Link>
 
         <Routes>
           <Route path="/" exact>
