@@ -1,10 +1,11 @@
 import { ProjectCard } from './ProjectCards';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import colorSharp2 from '../assets/img/color-sharp2.png';
+import { Link } from 'react-router-dom';
 
 import { Route } from 'react-router-dom';
 
-import projImg1 from "../assets/img/project-img1.png";
+import friends from "../assets/img/friends.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 
@@ -13,8 +14,8 @@ import projImg3 from "../assets/img/project-img3.png";
 export const Projects = () => {
 
 
-    <Route path="/project1">
-        <Link to="/project1">Project1</Link>
+    <Route path="/Friends">
+        <Link to="/Friends">Friends</Link>
     </Route>
 
 
@@ -22,8 +23,8 @@ export const Projects = () => {
         {
         title: "Project 1",
         description: "This is a project",
-        imgUrl: projImg1,
-        link: "/project1",
+        imgUrl: friends,
+        link: "/Friends",
 
         },
         {
@@ -51,7 +52,7 @@ export const Projects = () => {
                         <p>This is currently a placeholder text for a project</p>
                             <br></br>
                             <p>This is another placeholder</p>
-                            <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                            <Tab.Container id="projects-tabs" defaultActiveKey="link-1">
                                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                     <Nav.Item>
                                         <Nav.Link eventKey="link-1">Tab One</Nav.Link>

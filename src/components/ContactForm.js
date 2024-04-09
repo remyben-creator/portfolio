@@ -44,7 +44,7 @@ export const ContactForm = () => {
     }
 
     return (
-        <section classNamme="contact" id="contact">
+        <section className="contact" id="contacts">
             <Container>
                 <Row className="aling-items-center">
                     <Col md={6}>
