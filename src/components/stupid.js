@@ -2,19 +2,28 @@ import { ProjectCard } from './ProjectCards';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
+import { Route } from 'react-router-dom';
+
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 
 
+
 export const Projects = () => {
+
+
+    <Route path="/project1">
+        <Link to="/project1">Project1</Link>
+    </Route>
+
 
     const projects = [
         {
         title: "Project 1",
         description: "This is a project",
         imgUrl: projImg1,
-        link: "https://www.google.com",
+        link: "/project1",
 
         },
         {

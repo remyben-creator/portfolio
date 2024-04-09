@@ -7,17 +7,32 @@ import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Project1 } from './components/project1';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <ContactForm />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Banner />
+        <ContactForm />
+        <Skills />
+        <Projects />
+        <Footer />
+
+        <Link to="/">Home</Link>
+
+        <Routes>
+          <Route path="/" exact>
+            <h1>Home Page</h1>
+          </Route>
+          <Route path="/project1">
+            <h1>Project 1</h1>
+          </Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
