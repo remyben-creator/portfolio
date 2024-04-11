@@ -19,9 +19,7 @@ export const Footer = () => {
                         <div className="social-icon">
                             <a href=""><img src={navIcon1}/></a>                            
                             <a href=""><img src={navIcon2}/></a>
-                            <a href=""><img src={navIcon3}/></a>
                         </div>
-                        <p>CopyRight 2024. All Rights Reserved</p>
                     </Col>
 
                 </Row>
