@@ -44,7 +44,7 @@ export const Projects = () => {
         </Route>
     </div>
 
-  /*  const projects1 = [
+    const projects1 = [
         {
         title: "Friends Application",
         description: "Ruby on Rails application for friend making.",
@@ -60,8 +60,8 @@ export const Projects = () => {
 
         }
 
-    ];*/
- /*   const projects2 = [
+    ];
+    const projects2 = [
         {
             title: "AI Recipe Creation Application",
             description: "OPENAI API calls for recipe creation.",
@@ -92,18 +92,8 @@ export const Projects = () => {
             link: "/Manakins",
         
             }
-            {
-                                                projects1.map((project, index) => {
-                                                    return (
-                                                        <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                        />
-                                                    )
-                                                })
-                                            }
 
-    ];*/
+    ];
     return (
         <section className="project" id="projects">
             <Container>
@@ -128,18 +118,44 @@ export const Projects = () => {
                                 <Tab.Content>
                                     <Tab.Pane eventKey="link-1">
                                         <Row>
-                                            
+                                            {
+                                                projects1.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
                                         </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="link-2">
                                             <Row>
-                                           
-                            
+                                            {
+                                                projects1.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }                            
                                             </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="link-3">
                                     <Row>
-                                    
+                                    {
+                                                projects1.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
                                         </Row>
                                     </Tab.Pane>
                                 </Tab.Content>
