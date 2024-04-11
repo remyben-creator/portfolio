@@ -1,10 +1,8 @@
 import { ProjectCard } from './ProjectCards';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import colorSharp2 from '../assets/img/color-sharp2.png';
-import { Link } from 'react-router-dom';
 import React from 'react';
 
-import { Route } from 'react-router-dom';
 
 import friends from "../assets/img/friends2.jpg";
 import brewer from "../assets/img/brewerscloset.png";

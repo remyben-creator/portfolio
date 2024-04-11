@@ -8,8 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Container, Row, Col,  } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom';
+
 
 
 /* Images 
