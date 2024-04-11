@@ -7,7 +7,7 @@ import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 
