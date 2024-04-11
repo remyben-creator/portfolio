@@ -12,7 +12,7 @@ import { Container, Row, Col,  } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 
 
-/* Images */
+/* Images 
 import friends from "./assets/img/friends2.jpg";
 import friends1 from "./assets/img/friends_app1.png";
 import marketplace from "./assets/img/brewerscloset.png";
@@ -24,7 +24,7 @@ import chef from "./assets/img/chef.png";
 import ai from "./assets/img/ai.jpg";
 import pokemon1 from "./assets/img/pokemon1.png";
 import manakinbird from "./assets/img/manakinbird.jpg";
-import butterfly from "./assets/img/butterfly.jpg";
+import butterfly from "./assets/img/butterfly.jpg";*/
 
 function App() {
   return (
@@ -34,17 +34,22 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Friends" element={<Friends />} />
-          <Route path="/Marketplace" element={<Marketplace />} />
-          <Route path="/Pokemon" element={<Pokemon />} />
-          <Route path="/Manakins" element={<Manakins />} />
-          <Route path="/Recipes" element={<Recipes />} />
-          <Route path="/MLAnimals" element={<MLAnimals />} />
+          
         </Routes>
       </div>
     </Router>
   );
 }
+
+/*
+<Route path="/Friends" element={<Friends />} />
+          <Route path="/Marketplace" element={<Marketplace />} />
+          <Route path="/Pokemon" element={<Pokemon />} />
+          <Route path="/Manakins" element={<Manakins />} />
+          <Route path="/Recipes" element={<Recipes />} />
+          <Route path="/MLAnimals" element={<MLAnimals />} /> 
+
+
 
 function Friends() {
   return (
@@ -251,7 +256,7 @@ function MLAnimals() {
                 </Row>
             </Container>
     </div>);
-}
+}*/
 
 
 export function Home() {

@@ -18,7 +18,7 @@ import butterfly from "../assets/img/butterfly.jpg";
 export const Projects = () => {
 
 
-    <div>
+    /*<div>
         <Route path="/Friends">
             <Link to="/Friends">Friends</Link>
         </Route>
@@ -42,14 +42,14 @@ export const Projects = () => {
         <Route path="/MLAnimals">
             <Link to="/MLAnimals">MLAnimals</Link>
         </Route>
-    </div>
+    </div>*/
 
     const projects1 = [
         {
         title: "Friends Application",
         description: "Ruby on Rails application for friend making.",
         imgUrl: friends,
-        link: "/Friends",
+        link: "https://github.com/remyben-creator/FriendsApp",
 
         },
         {
@@ -66,14 +66,14 @@ export const Projects = () => {
             title: "AI Recipe Creation Application",
             description: "OPENAI API calls for recipe creation.",
             imgUrl: chefhat,
-            link: "/Recipes",
+            link: "https://github.com/remyben-creator/AI-Personal-Project",
         
             },
             {
             title: "Animal Image Classification",
             description: "Keras Models for classifying animal images.",
             imgUrl: butterfly,
-            link: "/MLAnimals",
+            link: "https://github.com/remyben-creator/AnimalsML",
         
             }
     ];
@@ -82,14 +82,14 @@ export const Projects = () => {
             title: "Pokemon Reverse Engineering",
             description: "C and Assembly code for reverse engineering Pokemon Red and Blue.",
             imgUrl: pokemon1,
-            link: "/Pokemon",
+            link: "https://github.com/remyben-creator/PokeReverseEngineering",
     
             },
             {
             title: "Lance Tailed Manakin Mating Dance",
             description: "Netlogo ABM for modeling courtship behavior in Lance Tailed Manakins.",
             imgUrl: manakin,
-            link: "/Manakins",
+            link: "https://github.com/remyben-creator/Courting-Habit-of-Manakins",
         
             }
 
@@ -133,7 +133,7 @@ export const Projects = () => {
                                     <Tab.Pane eventKey="link-2">
                                             <Row>
                                             {
-                                                projects1.map((project, index) => {
+                                                projects2.map((project, index) => {
                                                     return (
                                                         <ProjectCard
                                                         key={index}
@@ -147,7 +147,7 @@ export const Projects = () => {
                                     <Tab.Pane eventKey="link-3">
                                     <Row>
                                     {
-                                                projects1.map((project, index) => {
+                                                projects3.map((project, index) => {
                                                     return (
                                                         <ProjectCard
                                                         key={index}
