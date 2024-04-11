@@ -182,7 +182,8 @@ function Manakins() {
                               <li>Agent Based Model in Netlogo to model the courting habits of Manakin birds in the wild.</li>
                               <li>Fully devloped decision making and dacing of Lance Tailed Manakin.</li>
                               <li>Independant Variables: Number of Breeding Grounds, and number of female and male birds.</li>
-                              <li>Random Breeding Ground placement for different simulation outcomes.</li>
+                              <li>Random Breeding Ground placement for different simulation outcomes.</li>\
+                              </ul>
                         </ul>
                     </Col>
                     <Col xs={12} ms={6} xl={5}>
