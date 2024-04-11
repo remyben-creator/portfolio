@@ -1,21 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React, { useRef } from 'react';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
-import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
 import { Container, Row, Col,  } from 'react-bootstrap';
 import { useLocation } from 'react-router-dom';
 
 
 /* Images */
-import headerImg from "./assets/img/friends.png";
 import friends from "./assets/img/friends2.jpg";
 import friends1 from "./assets/img/friends_app1.png";
 import marketplace from "./assets/img/brewerscloset.png";
