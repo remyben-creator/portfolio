@@ -266,6 +266,7 @@ export function Home() {
     <>
       <Banner />
         <div ref={projectsRef}><Projects /></div>
+        <div ref={contactsRef}><ContactForm /></div>
       <Footer />
     </>
   );

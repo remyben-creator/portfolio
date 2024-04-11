@@ -132,30 +132,13 @@ export const Projects = () => {
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="link-2">
                                             <Row>
-                                    {
-                                                projects2.map((project, index) => {
-                                                    return (
-                                                        <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                        />
-                                                    )
-                                                })
-                                            }
+                                           
+                            
                                             </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="link-3">
                                     <Row>
-                                    {
-                                                projects3.map((project, index) => {
-                                                    return (
-                                                        <ProjectCard
-                                                        key={index}
-                                                        {...project}
-                                                        />
-                                                    )
-                                                })
-                                            }
+                                    
                                         </Row>
                                     </Tab.Pane>
                                 </Tab.Content>
