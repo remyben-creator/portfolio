@@ -5,33 +5,37 @@ import { Link } from 'react-router-dom';
 
 import { Route } from 'react-router-dom';
 
-import friends from "../assets/img/friends.png";
-import projImg2 from "../assets/img/project-img2.png";
+import friends from "../assets/img/friends2.jpg";
+import brewer from "../assets/img/brewerscloset.png";
 import projImg3 from "../assets/img/project-img3.png";
 
 
 
 export const Projects = () => {
 
-
-    <Route path="/Friends">
-        <Link to="/Friends">Friends</Link>
-    </Route>
-
+    <div>
+        <Route path="/Friends">
+            <Link to="/Friends">Friends</Link>
+        </Route>
+        
+        <Route path="/Marketplace">
+            <Link to="/Marketplace">Marketplace</Link>
+        </Route>
+    </div>
 
     const projects = [
         {
-        title: "Project 1",
-        description: "This is a project",
+        title: "Friends Application",
+        description: "Ruby on Rails application for friend making.",
         imgUrl: friends,
         link: "/Friends",
 
         },
         {
-        title: "Project 2",
-        description: "This is a project",
-        imgUrl: projImg2,
-        link: "https://www.google.com",
+        title: "Marketplace Application",
+        description: "Java Android Application for buying and selling items on campus.",
+        imgUrl: brewer,
+        link: "/Marketplace",
 
         },
         {
