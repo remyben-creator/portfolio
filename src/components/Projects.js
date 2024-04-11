@@ -61,7 +61,7 @@ export const Projects = () => {
         }
 
     ];
-    const projects2 = [
+ /*   const projects2 = [
         {
             title: "AI Recipe Creation Application",
             description: "OPENAI API calls for recipe creation.",
@@ -93,7 +93,7 @@ export const Projects = () => {
         
             }
 
-    ];
+    ];*/
     return (
         <section className="project" id="projects">
             <Container>
