@@ -109,15 +109,6 @@ function Marketplace() {
                               <li>Image to bitmap conversion for efficient storage.</li>
                             </ul>
                         </ul>
-                        <Col> 
-                          <img src={app1} alt="Marketplace1" />
-                        </Col>
-                        <Col>
-                          <img src={app2} alt="Marketplace2" />
-                        </Col>
-                        <Col>
-                          <img src={app3} alt="Marketplace3" />
-                        </Col>
                         <Col>
                           <img src={app4} alt="Marketplace4" />
                         </Col>
