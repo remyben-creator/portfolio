@@ -51,8 +51,11 @@ export const Banner = () => {
                         {({ isVisible }) => 
                             <div className={isVisible ? 'animated__animated animate__fadeIn': ""}>
                                 <span className="tagline">Welcome to my Portfolio!</span>
-                                <h1>{"Hi, I'm Benjamin "}<span className="wrap">web developer</span></h1>
-                                <p>I'm not sure what goes here yet! </p>
+                                <h1 style={{ color: 'black', backgroundColor: 'white', padding: '10px', borderRadius: '5px' }}>{"Hi, I'm Benjamin "}<span className="wrap"></span></h1>
+                                <p style={{ color: 'black', backgroundColor: 'white', padding: '10px', borderRadius: '5px' }}>
+                                    I am a Junior at Vassar College studying Computer Science and Mathematics. I also 
+                                    studied for a semester at Yale NUS college in Singapore. Thanks for taking a look at
+                                    my portfolio. Please feel free to check out my <a href="/#projects">projects</a> and <a href="/contact">contact</a> me if you have any questions.</p>
                                 <button onClick={() => console.log('connect')}>Let's connect<ArrowRightCircle size={25} /></button>
                             </div>}
                         </TrackVisibility>

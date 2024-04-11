@@ -24,9 +24,9 @@ import app2 from "./assets/img/app2.png";
 import app3 from "./assets/img/app3.png";
 import app4 from "./assets/img/app4.png";
 import chef from "./assets/img/chef.png";
-import ai from "./assets/img/ai.png";
+import ai from "./assets/img/ai.jpg";
 import pokemon1 from "./assets/img/pokemon1.png";
-import manakinbird from "./assets/img/manakinbird.png";
+import manakinbird from "./assets/img/manakinbird.jpg";
 import butterfly from "./assets/img/butterfly.jpg";
 
 function App() {

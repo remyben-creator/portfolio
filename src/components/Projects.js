@@ -2,16 +2,21 @@ import { ProjectCard } from './ProjectCards';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 import { Route } from 'react-router-dom';
 
 import friends from "../assets/img/friends2.jpg";
 import brewer from "../assets/img/brewerscloset.png";
-import projImg3 from "../assets/img/project-img3.png";
+import pokemon1 from "../assets/img/pokemon1.png";
+import manakin from "../assets/img/manakinbird.jpg";
+import chefhat from "../assets/img/chef.png";
+import butterfly from "../assets/img/butterfly.jpg";
 
 
 
 export const Projects = () => {
+
 
     <div>
         <Route path="/Friends">
@@ -21,9 +26,25 @@ export const Projects = () => {
         <Route path="/Marketplace">
             <Link to="/Marketplace">Marketplace</Link>
         </Route>
+
+        <Route path="/Pokemon">
+            <Link to="/Pokemon">Pokemon</Link>
+        </Route>
+
+        <Route path="/Manakins">
+            <Link to="/Manakins">Manakins</Link>
+        </Route>
+
+        <Route path="/Recipes">
+            <Link to="/Recipes">Recipes</Link>
+        </Route>
+
+        <Route path="/MLAnimals">
+            <Link to="/MLAnimals">MLAnimals</Link>
+        </Route>
     </div>
 
-    const projects = [
+    const projects1 = [
         {
         title: "Friends Application",
         description: "Ruby on Rails application for friend making.",
@@ -37,14 +58,41 @@ export const Projects = () => {
         imgUrl: brewer,
         link: "/Marketplace",
 
-        },
-        {
-        title: "Project 3",
-        description: "This is a project",
-        imgUrl: projImg3,
-        link: "https://www.google.com",
+        }
 
-        },
+    ];
+    const projects2 = [
+        {
+            title: "AI Recipe Creation Application",
+            description: "OPENAI API calls for recipe creation.",
+            imgUrl: chefhat,
+            link: "/Recipes",
+        
+            },
+            {
+            title: "Animal Image Classification",
+            description: "Keras Models for classifying animal images.",
+            imgUrl: butterfly,
+            link: "/MLAnimals",
+        
+            }
+    ];
+    const projects3 = [
+        {
+            title: "Pokemon Reverse Engineering",
+            description: "C and Assembly code for reverse engineering Pokemon Red and Blue.",
+            imgUrl: pokemon1,
+            link: "/Pokemon",
+    
+            },
+            {
+            title: "Lance Tailed Manakin Mating Dance",
+            description: "Netlogo ABM for modeling courtship behavior in Lance Tailed Manakins.",
+            imgUrl: manakin,
+            link: "/Manakins",
+        
+            }
+
     ];
     return (
         <section className="project" id="projects">
@@ -53,26 +101,25 @@ export const Projects = () => {
                     <Col>
                     <div className='project-bx'>
                         <h2> Projects </h2>
-                        <p>This is currently a placeholder text for a project</p>
-                            <br></br>
-                            <p>This is another placeholder</p>
+                        <p>My Personal Projects</p>
+                            
                             <Tab.Container id="projects-tabs" defaultActiveKey="link-1">
                                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                     <Nav.Item>
-                                        <Nav.Link eventKey="link-1">Tab One</Nav.Link>
+                                        <Nav.Link eventKey="link-1">Software Engineering</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="link-2">Tab Two</Nav.Link>
+                                        <Nav.Link eventKey="link-2">AI and ML</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="link-3">Tab Three</Nav.Link>
+                                        <Nav.Link eventKey="link-3">Miscellaneous</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                                 <Tab.Content>
                                     <Tab.Pane eventKey="link-1">
                                         <Row>
                                             {
-                                                projects.map((project, index) => {
+                                                projects1.map((project, index) => {
                                                     return (
                                                         <ProjectCard
                                                         key={index}
@@ -84,11 +131,31 @@ export const Projects = () => {
                                         </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="link-2">
-                                            <p> placeholder </p>
+                                            <Row>
+                                    {
+                                                projects2.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
+                                            </Row>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="link-3">
                                     <Row>
-                                            <p> placeholder </p>
+                                    {
+                                                projects3.map((project, index) => {
+                                                    return (
+                                                        <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                        />
+                                                    )
+                                                })
+                                            }
                                         </Row>
                                     </Tab.Pane>
                                 </Tab.Content>
