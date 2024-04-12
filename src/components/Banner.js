@@ -13,9 +13,7 @@ export const Banner = () => {
             <Container>
                 <Row className="aling-items-center">
                     <Col xs={12} ms={6} xl={7}>
-                        <TrackVisibility>
-                        {({ isVisible }) => 
-                            <div className={isVisible ? 'animated__animated animate__fadeIn': ""}>
+                            <div>
                                 <span className="tagline">Welcome to my Portfolio!</span>
                                 <h1 style={{ color: 'black', backgroundColor: 'white', padding: '10px', borderRadius: '5px' }}>{"Hi, I'm Benjamin "}<span className="wrap"></span></h1>
                                 <p style={{ color: 'black', backgroundColor: 'white', padding: '10px', borderRadius: '5px' }}>
@@ -23,8 +21,7 @@ export const Banner = () => {
                                     studied for a semester at Yale NUS college in Singapore. Thanks for taking a look at
                                     my portfolio. Please feel free to check out my <a href="/#projects">projects</a> and <a href="/#contacts">contact</a> me if you have any questions.</p>
                                 <button onClick={() => console.log('connect')}>Let's connect<ArrowRightCircle size={25} /></button>
-                            </div>}
-                        </TrackVisibility>
+                            </div>
                     </Col>
                     <Col xs={12} ms={6} xl={5}>
                         <img src={headerImg} alt="Header Image" />

@@ -2,6 +2,7 @@ import { ProjectCard } from './ProjectCards';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import React from 'react';
+import { Link, Route } from 'react-router-dom';
 
 
 import friends from "../assets/img/friends2.jpg";
