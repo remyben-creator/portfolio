@@ -25,7 +25,7 @@ export const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        const url = `${window.location.origin}/#contacts`;;
+        const url = `${window.location.origin}/contacts`;;
         let response = await fetch(url, {
             method: 'POST',
             headers: {
