@@ -256,12 +256,14 @@ function MLAnimals() {
             </Container>
     </div>);
 }
+
+const projectsRef = useRef(null);
         <div ref={projectsRef}><Projects /></div>
 */
 
 
 export function Home() {
-  const projectsRef = useRef(null);
+
   const contactsRef = useRef(null);
 
   return (
