@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-//import headerImg from "../assets/img/wave.png";
+import headerImg from "../assets/img/wave.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -28,11 +27,10 @@ export const Banner = () => {
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} ms={6} xl={5}>
-                        
+                        <img src={headerImg} alt="Header Image" />
                     </Col>
                 </Row>
             </Container>
         </section>
     )
 }
-//<img src={headerImg} alt="Header Image" />
