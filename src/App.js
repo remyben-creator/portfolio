@@ -3,9 +3,9 @@ import './App.css';
 import React, { useRef } from 'react';
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
-import { Projects } from './components/Projects';
+//import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { ContactForm } from './components/ContactForm';
+//import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -264,13 +264,14 @@ const projectsRef = useRef(null);
 
 export function Home() {
 
-  const contactsRef = useRef(null);
+  //const contactsRef = useRef(null);
+  //<div ref={contactsRef}><ContactForm /></div>
 
   return (
     <>
       <Banner />
 
-        <div ref={contactsRef}><ContactForm /></div>
+        
       <Footer />
     </>
   );
