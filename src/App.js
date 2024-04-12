@@ -255,18 +255,19 @@ function MLAnimals() {
                 </Row>
             </Container>
     </div>);
-}*/
+}
+        <div ref={projectsRef}><Projects /></div>
+*/
 
 
 export function Home() {
-  const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const contactsRef = useRef(null);
 
   return (
     <>
       <Banner />
-        <div ref={projectsRef}><Projects /></div>
+
         <div ref={contactsRef}><ContactForm /></div>
       <Footer />
     </>
