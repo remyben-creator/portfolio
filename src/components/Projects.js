@@ -16,7 +16,7 @@ import butterfly from "../assets/img/butterfly.jpg";
 export const Projects = () => {
 
 
-    /*<div>
+    <div>
         <Route path="/Friends">
             <Link to="/Friends">Friends</Link>
         </Route>
@@ -40,14 +40,14 @@ export const Projects = () => {
         <Route path="/MLAnimals">
             <Link to="/MLAnimals">MLAnimals</Link>
         </Route>
-    </div>*/
+    </div>
 
     const projects1 = [
         {
         title: "Friends Application",
         description: "Ruby on Rails application for friend making.",
         imgUrl: friends,
-        link: "https://github.com/remyben-creator/FriendsApp",
+        link: "/Friends",
 
         },
         {
@@ -64,14 +64,14 @@ export const Projects = () => {
             title: "AI Recipe Creation Application",
             description: "OPENAI API calls for recipe creation.",
             imgUrl: chefhat,
-            link: "https://github.com/remyben-creator/AI-Personal-Project",
+            link: "/Recipes",
         
             },
             {
             title: "Animal Image Classification",
             description: "Keras Models for classifying animal images.",
             imgUrl: butterfly,
-            link: "https://github.com/remyben-creator/AnimalsML",
+            link: "/MLAnimals",
         
             }
     ];
@@ -80,14 +80,14 @@ export const Projects = () => {
             title: "Pokemon Reverse Engineering",
             description: "C and Assembly code for reverse engineering Pokemon Red and Blue.",
             imgUrl: pokemon1,
-            link: "https://github.com/remyben-creator/PokeReverseEngineering",
+            link: "/Pokemon",
     
             },
             {
             title: "Lance Tailed Manakin Mating Dance",
             description: "Netlogo ABM for modeling courtship behavior in Lance Tailed Manakins.",
             imgUrl: manakin,
-            link: "https://github.com/remyben-creator/Courting-Habit-of-Manakins",
+            link: "/Manakins",
         
             }
 

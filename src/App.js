@@ -5,7 +5,7 @@ import { NavBar } from './components/NavBar';
 //import { Banner } from './components/Banner';
 import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import { ContactForm } from './components/ContactForm';
+import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -261,16 +261,16 @@ function MLAnimals() {
 
 export function Home() {
 
-  //const contactsRef = useRef(null);
-  //<div ref={contactsRef}><ContactForm /></div>
-  //<Banner />
+  const contactsRef = useRef(null);
   const projectsRef = useRef(null);
         
-
+  //<Banner />
+  
   return (
     <>
 
       <div ref={projectsRef}><Projects /></div> 
+      <div ref={contactsRef}><ContactForm /></div>
       <Footer />
     </>
   );
