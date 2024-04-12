@@ -1,9 +1,9 @@
 
 import './App.css';
 import React, { useRef } from 'react';
-//import { NavBar } from './components/NavBar';
+import { NavBar } from './components/NavBar';
 //import { Banner } from './components/Banner';
-//import { Projects } from './components/Projects';
+import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import { ContactForm } from './components/ContactForm';
 import { Footer } from './components/Footer';
@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 
-/* Images 
+// Images 
 import friends from "./assets/img/friends2.jpg";
 import friends1 from "./assets/img/friends_app1.png";
 import marketplace from "./assets/img/brewerscloset.png";
@@ -23,32 +23,29 @@ import chef from "./assets/img/chef.png";
 import ai from "./assets/img/ai.jpg";
 import pokemon1 from "./assets/img/pokemon1.png";
 import manakinbird from "./assets/img/manakinbird.jpg";
-import butterfly from "./assets/img/butterfly.jpg";*/
+import butterfly from "./assets/img/butterfly.jpg";
 
 
-//<NavBar />
 function App() {
   return (
     <Router>
       <div>
         
+        <NavBar />
 
         <Routes>
           <Route path="/" element={<Home />} />
-          
-        </Routes>
-      </div>
-    </Router>
-  );
-}
-
-/*
-<Route path="/Friends" element={<Friends />} />
+          <Route path="/Friends" element={<Friends />} />
           <Route path="/Marketplace" element={<Marketplace />} />
           <Route path="/Pokemon" element={<Pokemon />} />
           <Route path="/Manakins" element={<Manakins />} />
           <Route path="/Recipes" element={<Recipes />} />
           <Route path="/MLAnimals" element={<MLAnimals />} /> 
+        </Routes>
+      </div>
+    </Router>
+  );
+}
 
 
 
@@ -259,21 +256,19 @@ function MLAnimals() {
     </div>);
 }
 
-const projectsRef = useRef(null);
-        <div ref={projectsRef}><Projects /></div>
-*/
-
 
 export function Home() {
 
   //const contactsRef = useRef(null);
   //<div ref={contactsRef}><ContactForm /></div>
   //<Banner />
+  const projectsRef = useRef(null);
+        
 
   return (
     <>
 
-        
+      <div ref={projectsRef}><Projects /></div> 
       <Footer />
     </>
   );
