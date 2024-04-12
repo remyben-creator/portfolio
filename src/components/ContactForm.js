@@ -25,7 +25,8 @@ export const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        let response = await fetch('/contact', {
+        const url = window.location.href;
+        let response = await fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;chatset=utf-8'
