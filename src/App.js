@@ -6,7 +6,7 @@ import { Banner } from './components/Banner';
 //import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 //import { ContactForm } from './components/ContactForm';
-import { Footer } from './components/Footer';
+//import { Footer } from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -268,10 +268,10 @@ export function Home() {
 
   //const contactsRef = useRef(null);
   //<div ref={contactsRef}><ContactForm /></div>
+  //<Banner />
 
   return (
     <>
-      <Banner />
 
         
       <Footer />
