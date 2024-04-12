@@ -16,8 +16,8 @@ export const Banner = () => {
                     <Col xs={12} ms={6} xl={7}>
                             <div>
                                 <span className="tagline">Welcome to my Portfolio!</span>
-                                <h1 style={{ color: 'black'}}>{"Hi, I'm Benjamin "}<span className="wrap"></span></h1>
-                                <p style={{ color: 'black'}}>
+                                <h1 style={{ color: 'black', backgroundColor: 'white', padding: '10px', borderRadius: '5px'}}>{"Hi, I'm Benjamin "}<span className="wrap"></span></h1>
+                                <p style={{ color: 'black', backgroundColor: 'white', padding: '10px', borderRadius: '5px'}}>
                                     I am a Junior at Vassar College studying Computer Science and Mathematics. I also 
                                     studied for a semester at Yale NUS college in Singapore. Thanks for taking a look at
                                     my portfolio. Please feel free to check out my <a href="/#projects">projects</a> and <a href="/#contacts">contact</a> me if you have any questions.</p>
