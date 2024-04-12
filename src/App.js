@@ -264,11 +264,10 @@ export function Home() {
   const contactsRef = useRef(null);
   const projectsRef = useRef(null);
         
-  <Banner />
 
   return (
     <>
-
+      <Banner />
       <div ref={projectsRef}><Projects /></div> 
       <div ref={contactsRef}><ContactForm /></div>
       <Footer />
