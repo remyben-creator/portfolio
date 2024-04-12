@@ -1,7 +1,7 @@
 
 import './App.css';
 import React, { useRef } from 'react';
-import { NavBar } from './components/NavBar';
+//import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 //import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,11 +25,13 @@ import pokemon1 from "./assets/img/pokemon1.png";
 import manakinbird from "./assets/img/manakinbird.jpg";
 import butterfly from "./assets/img/butterfly.jpg";*/
 
+
+//<NavBar />
 function App() {
   return (
     <Router>
       <div>
-        <NavBar />
+        
 
         <Routes>
           <Route path="/" element={<Home />} />
