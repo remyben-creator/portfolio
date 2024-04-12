@@ -25,7 +25,8 @@ export const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
-        const url = `${window.location.origin}/contacts`;;
+        //const url = `${window.location.origin}/contacts`;;
+        const url = 'dummy';;
         let response = await fetch(url, {
             method: 'POST',
             headers: {
@@ -49,9 +50,13 @@ export const ContactForm = () => {
                 <Row className="aling-items-center">
                     <Col md={6}>
                         <img src={contactImg} alt="Contact Me" />
+                        
                     </Col>
                     <Col md={6}>
                         <h2> Get In Touch </h2>
+                        <h3>This was totally working but costs too much memory than I have in the heroku plan I am willing to pay for.
+                            I would love to still hear from you at bremy@vassar.edu. Thanks!
+                        </h3>
                         <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
