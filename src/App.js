@@ -2,7 +2,7 @@
 import './App.css';
 import React, { useRef } from 'react';
 import { NavBar } from './components/NavBar';
-import { Banner } from './components/Banner';
+//import { Banner } from './components/Banner';
 import { Projects } from './components/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ContactForm } from './components/ContactForm';
@@ -264,7 +264,7 @@ export function Home() {
   const contactsRef = useRef(null);
   const projectsRef = useRef(null);
         
-  <Banner />
+  //<Banner />
 
   return (
     <>
